@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container1" id="container1">
+      <div class="box1" id="box1">
+        <div class="el1">
+          <p>Isi identitasmu duluu</p>
+        </div>
+        <div class="el2">
+          <form action="" name="identitas">
+            <p class="ss">Nama :</p>
+            <input type="text" id="nama" name="namamu" /><br />
+            <button
+              type="submit"
+              class="tomboll"
+              id="btnNama"
+              onclick="start()"
+            >
+              okee
+            </button>
+          </form>
+        </div>
+        <div class="el2"></div>
+      </div>
+      <div class="box2" id="box2">
+        <div class="halo">
+          <p id="tampilNama">Hallooo HHdjhsdj</p>
+        </div>
+        <br />
+        <div class="pp">
+          <p>Jawab jujur ya</p>
+          <p>Sayang aku nggak??</p>
+        </div>
+        <br /><br />
+        <div class="tempTombol">
+          <button type="button" class="tombol" onmouseover="nggak(-400, 400)" onclick="nggak(-400, 400)">
+            nggak
+          </button>
+          <button type="button" class="tombolll" onclick="iya()">Iyaaa</button>
+        </div>
+        <audio id="opening">
+          <source src="./assets/opening.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+      <div id="videonya">
+        <video src="./assets/video.mp4" id="video"></video>
+      </div>
+      <div class="box3" id="box3">
+        <audio id="music">
+          <source src="./assets/music.mp3" type="audio/mpeg" />
+        </audio>
+        <div class="jam">
+          <p id="jam"></p>
+          <p class="tanggal" id="tanggal">12 Januari 2022</p>
+        </div>
+        <br /><br /><br /><br />
+        <div class="quote">
+          <p id="quotenya">
+            
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbzcDvySuLWMk2hr6527b8GSv0-cc1_6weCj1s__XIbiCZq1bE54gu0HHg6ZUDcM4KDL/exec";
+      const form = document.forms["identitas"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

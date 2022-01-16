@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url("./bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(3px);
+}
+.container1 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  display: flex;
+  background: rgba(236, 235, 236, 0.8);
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 5px;
+  height: 150px;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 20px;
+}
+.el1 p {
+  font-weight: 700;
+  font-size: large;
+}
+.tomboll {
+  float: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+  background: rgb(69, 69, 179);
+  border-color: transparent;
+  border-style: solid;
+  font-weight: 700;
+  color: white;
+}
+.ss {
+  font-weight: 500;
+}
+#nama {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 28px;
+  width: 250px;
+  border-radius: 5px;
+  background: #fff;
+  border-color: #fff;
+  border-style: solid;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+#nama:focus {
+  border: none;
+  background-color: #fff;
+  border: 0px solid;
+  color: #333;
+}
+
+/* /////////////////////////// */
+.tombol {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+  background: rgb(43, 43, 43);
+  border-color: transparent;
+  border-style: solid;
+  font-weight: 700;
+  color: white;
+}
+.tombolll {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+  background: rgb(69, 69, 179);
+  border-color: transparent;
+  border-style: solid;
+  font-weight: 700;
+  color: white;
+}
+
+.box2 {
+  background: rgba(236, 235, 236, 0.8);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 400px;
+  border-radius: 20px;
+  transition: 0.1s;
+  display: none;
+}
+.halo {
+  text-align: center;
+}
+.pp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tempTombol {
+  float: right;
+}
+.pp p {
+  margin-left: 30px;
+}
+video {
+  display: none;
+  position: relative;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+#videonya {
+  border-radius: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.box3 {
+  height: 400px;
+  display: none;
+}
+.jam {
+  font-size: 7vw;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+.tanggal {
+  font-size: 20px;
+}
+.quote {
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 30px;
+}
